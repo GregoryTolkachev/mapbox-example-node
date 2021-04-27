@@ -69,10 +69,10 @@ router.get('/geo', async (req, res) => {
     let ip = req.socket.remoteAddress;
     //console.log(ip);
     if (ip == "::1" || ip.includes("::ffff")) {
-        ip = "24.212.248.248";
+        ip = "192.168.0.106";
     }
-
-    let loc = await axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=c461a284199842f893dc5ec8561c9a7a&ip=${ip}`);
+    e2c6be79875946668512a3c2690a46f1
+    let loc = await axios.get(`https://api.ipgeolocation.io/ipgeo?apiKey=e2c6be79875946668512a3c2690a46f1&ip=${ip}`);
 
     //console.log(loc.data);
     res.json(loc.data);
